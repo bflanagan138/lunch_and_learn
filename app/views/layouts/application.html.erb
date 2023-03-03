@@ -9,7 +9,14 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
-    <%= yield %>
+   <body>
+    <p><span  class='banner'><%= link_to 'Home', root_path %></span>
+    <p><span  class='banner'><%= link_to 'Register', root_path %></span>
+    <p><span  class='banner'><%= link_to 'Log In', root_path %></span>
+    <div class='content'>
+      <h1 class='banner'>Lunch and Learn</h1>
+    <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -1,5 +1,0 @@
-class RecipeFacade
-  def self.recipe_by_country(country)
-    recipe = RecipesService.recipes_by_country(country)
-  end
-end

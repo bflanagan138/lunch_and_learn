@@ -6,7 +6,7 @@ class Recipe
 
   def initialize(attr, country)
     @title      = attr[:recipe][:label]
-    @url        = attr[:recipe][:uri]
+    @url        = attr[:recipe][:url]
     @country    = country.downcase.capitalize
     @image_url  = attr[:recipe][:image]
   end

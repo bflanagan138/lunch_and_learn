@@ -4,7 +4,7 @@ class RecipesService
   end
 
   def self.recipes_by_country(country)
-    response = conn.get("/api/recipes/v2?recipes_by_country.json&q=#{country}")
+    response = conn.get("/api/recipes/v2?q=#{country}")
     recipes_by_country = parse(response)
   end
 

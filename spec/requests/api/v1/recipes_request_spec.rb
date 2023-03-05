@@ -45,7 +45,7 @@ RSpec.describe "recipe API request" do
   it 'returns an empty array if no country name is provided' do
     country = ''
    
-    get "/api/v1/recipes/?q=#{country}"
+    get "/api/v1/recipes/?country=#{country}"
     parse = JSON.parse(response.body, symbolize_names: true)
   
     expect(parse).to be_a Hash
@@ -56,7 +56,7 @@ RSpec.describe "recipe API request" do
   
   it 'returns an empty array if non country name is provided' do
     country = 'Dirty Work'
-    get "/api/v1/recipes/?q=#{country}"
+    get "/api/v1/recipes?country=#{country}"
     
     parse = JSON.parse(response.body, symbolize_names: true)
   
@@ -65,5 +65,4 @@ RSpec.describe "recipe API request" do
     expect(parse[:data]).to be_a Array
     expect(parse[:data]).to eq ([])
   end
-  
 end

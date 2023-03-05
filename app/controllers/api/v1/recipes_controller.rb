@@ -1,11 +1,12 @@
 class Api::V1::RecipesController < ApplicationController
   def index
-    if params[:q] != nil
-      recipes = RecipeFacade.recipes_by_country(params[:q])
-      render json: RecipesSerializer.new(recipes)
-    else
-      # random_country = 
-      # recipes = RecipeFacade.recipes_by_country(random_country)
-    end
+    country = params[:q]
+    if country == nil?
+      []
+    elsif country != nil?
+    #if country.exists? 
+    recipes = RecipeFacade.recipes_by_country(country)
+    #if country
+    render json: RecipesSerializer.new(recipes)
   end
 end

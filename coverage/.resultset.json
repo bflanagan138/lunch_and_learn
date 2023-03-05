@@ -19,7 +19,6 @@
           1,
           null,
           null,
-          null,
           1,
           1,
           null,
@@ -38,6 +37,19 @@
       },
       "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/models/application_record.rb": {
         "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/serializers/videos_serializer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
           0,
           0,
           0
@@ -97,12 +109,42 @@
         "branches": {
         }
       },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/facades/video_facade.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/facades/learning_resources_facade.rb": {
         "lines": [
           0,
           0,
           null,
           null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/poros/video.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
           0,
           0,
           0
@@ -292,6 +334,6 @@
         }
       }
     },
-    "timestamp": 1678054679
+    "timestamp": 1678058801
   }
 }

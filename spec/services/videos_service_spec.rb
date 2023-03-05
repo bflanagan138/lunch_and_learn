@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'videos' do
   it 'returns JSON response' do
     country = 'estonia'
-    results = VideosService.videos(country)
+    results = VideosService.videos_by_country(country)
     
     expect(results).to have_key(:items)
     expect(results[:items]).to be_a Array

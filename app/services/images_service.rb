@@ -1,6 +1,6 @@
 class ImageService
   def self.conn
-    Faraday.new(url: "https://api.unsplash.com/", params: { client_id: ENV['unsplash_client_id'] })
+    Faraday.new(url: "https://api.unsplash.com", params: { client_id: ENV['unsplash_client_id'] })
   end
 
   def self.images(country)

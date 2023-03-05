@@ -6,12 +6,11 @@ class CountriesService
   def self.random_country
     response = conn.get("/v3.1/all")
     countries = parse(response)
-    countries.sample[:name][:common]
+    countries.sample
   end
 
   def self.exist(country)
-    c = country.downcase.gsub(" ", "%20")
-    response = conn.get("/v3.1/name/#{c}")
+    response = conn.get("/v3.1/name/#{country}")
     if response.status == 200
       country = parse(response)
     else

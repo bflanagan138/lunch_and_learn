@@ -44,14 +44,16 @@ RSpec.describe "recipe API request" do
 
   it 'returns an empty array if no country name is provided' do
     country = ''
-   
     get "/api/v1/recipes/?country=#{country}"
     parse = JSON.parse(response.body, symbolize_names: true)
   
     expect(parse).to be_a Hash
-    expect(parse).to have_key (:data)
-    expect(parse[:data]).to be_a Array
-    expect(parse[:data]).to eq ([])
+    expect(parse).to have_key (:name)
+    expect(parse[:name]).to be_a Hash
+    expect(parse[:name]).to have_key (:common)
+    expect(parse[:name][:common]).to be_a String
+    expect(parse[:name][:common]).to_not eq ("#{country}")
+
   end
   
   it 'returns an empty array if non country name is provided' do

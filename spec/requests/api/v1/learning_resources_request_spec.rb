@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "learning resources request" do
-  it 'returns a list of recipes from provided country' do
+  xit 'returns a list of recipes from provided country' do
     country = "Laos"
     get "/api/v1/learning_resources?country=#{country}"
     

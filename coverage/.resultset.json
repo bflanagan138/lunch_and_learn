@@ -7,7 +7,30 @@
           null
         ]
       },
-      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/videos_service.rb": {
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/controllers/api/v1/recipes_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/countries_service.rb": {
         "lines": [
           1,
           1,
@@ -17,6 +40,22 @@
           1,
           1,
           1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
           null,
           null,
           1,
@@ -196,33 +235,6 @@
         "branches": {
         }
       },
-      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/controllers/api/v1/recipes_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/controllers/api/v1/learning_resources_controller.rb": {
         "lines": [
           0,
@@ -257,7 +269,7 @@
         "branches": {
         }
       },
-      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/recipes_service.rb": {
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/videos_service.rb": {
         "lines": [
           0,
           0,
@@ -277,29 +289,13 @@
         "branches": {
         }
       },
-      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/countries_service.rb": {
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/recipes_service.rb": {
         "lines": [
           0,
           0,
           0,
           0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
           0,
           0,
           0,
@@ -334,6 +330,6 @@
         }
       }
     },
-    "timestamp": 1678058801
+    "timestamp": 1678059210
   }
 }

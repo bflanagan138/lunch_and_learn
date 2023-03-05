@@ -5,7 +5,7 @@ RSpec.describe 'countries' do
     random_country_1 = CountriesService.random_country
     random_country_2 = CountriesService.random_country
     
-    expect(random_country_1).to be_a String
+    expect(random_country_1).to be_a Hash
     expect(random_country_1).to_not eq (random_country_2)
   end
 
@@ -17,7 +17,7 @@ RSpec.describe 'countries' do
   end
 
   it 'returns an empty array if country does not exist' do
-    country = "Dirty Work"
+    country = "uranus"
     fake_country = CountriesService.exist(country)
     
     expect(fake_country).to eq ([])

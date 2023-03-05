@@ -1,8 +1,8 @@
 class Api::V1::RecipesController < ApplicationController
   def index
-    country = params[:q]
+    country = params[:country]
     if country == ''
-      render json: EmptySerializer.empty_array_response
+      render json: CountriesService.random_country
     elsif CountriesService.exist(country) == []
       render json: EmptySerializer.empty_array_response
     else

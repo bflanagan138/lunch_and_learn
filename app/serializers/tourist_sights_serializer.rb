@@ -5,7 +5,7 @@ class TouristSightsSerializer
       "data": sights.map do |sight|
         {
           "id": "null",
-          "type": sight.class.to_s.downcase,
+          "type": "tourist_sight",
           "attributes":
           {
             "name": sight.name,

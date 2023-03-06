@@ -7,7 +7,17 @@
           null
         ]
       },
-      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/videos_service.rb": {
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/facades/image_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          11,
+          null,
+          null
+        ]
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/images_service.rb": {
         "lines": [
           1,
           1,
@@ -21,6 +31,19 @@
           null,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/poros/image.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          10,
+          10,
           null,
           null
         ]
@@ -50,8 +73,6 @@
           0,
           0,
           0,
-          0,
-          0,
           0
         ],
         "branches": {
@@ -75,6 +96,17 @@
         "lines": [
           0,
           0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/serializers/images_serializer.rb": {
+        "lines": [
           0,
           0,
           0,
@@ -140,9 +172,7 @@
           0,
           0,
           0,
-          0,
           null,
-          0,
           0,
           0,
           0,
@@ -236,7 +266,7 @@
         "branches": {
         }
       },
-      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/images_service.rb": {
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/videos_service.rb": {
         "lines": [
           0,
           0,
@@ -333,6 +363,6 @@
         }
       }
     },
-    "timestamp": 1678062055
+    "timestamp": 1678066394
   }
 }

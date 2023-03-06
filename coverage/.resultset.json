@@ -41,6 +41,19 @@
           null
         ]
       },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/facades/tourist_sight_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          20,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/services/tourist_sights_service.rb": {
         "lines": [
           1,
@@ -49,13 +62,27 @@
           null,
           null,
           1,
-          null,
           1,
           1,
           null,
           null,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/poros/tourist_sight.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          20,
+          20,
+          20,
           null,
           null
         ]
@@ -105,6 +132,19 @@
         }
       },
       "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/serializers/learning_resources_serializer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/serializers/tourist_sights_serializer.rb": {
         "lines": [
           0,
           0,
@@ -403,6 +443,6 @@
         }
       }
     },
-    "timestamp": 1678126974
+    "timestamp": 1678129901
   }
 }

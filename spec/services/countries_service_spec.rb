@@ -19,7 +19,7 @@ RSpec.describe 'countries' do
   it 'returns an empty array if country does not exist' do
     country = "uranus"
     fake_country = CountriesService.exist(country)
-    
+   
     expect(fake_country).to eq ([])
   end
 end

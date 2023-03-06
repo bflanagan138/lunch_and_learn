@@ -11,11 +11,17 @@ class CountriesService
 
   def self.exist(country)
     response = conn.get("/v3.1/name/#{country}")
-    if response.status == 200
+    if conn.get("/v3.1/name/#{country}").status == 200
       country = parse(response)
     else
       []
     end
+  end
+
+  def self.learning_resources(country)
+    response = conn.get("/v3.1/name/#{country}")
+    country = parse(response)
+    require 'pry'; binding.pry
   end
 
   def self.parse(response)

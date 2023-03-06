@@ -12,7 +12,6 @@ RSpec.describe "recipe API request" do
     stub_request(:get, "https://restcountries.com/v3.1/name/#{country}")
       .to_return(status: 200, body: country_response)
  
-    country = "Vatican"
     get "/api/v1/recipes?country=#{country}"
     
     expect(response).to be_successful

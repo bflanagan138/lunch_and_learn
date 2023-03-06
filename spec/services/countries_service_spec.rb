@@ -33,7 +33,11 @@ RSpec.describe 'countries' do
   end
 
   it 'returns an empty array if country does not exist' do
-    country = "uranus"
+    country = "neptune"
+    country_response = File.read('spec/fixtures/non_country.json')
+    stub_request(:get, "https://restcountries.com/v3.1/name/#{country}")
+      .to_return(status: 200, body: country_response)
+
     fake_country = CountriesService.exist(country)
    
     expect(fake_country).to eq ([])

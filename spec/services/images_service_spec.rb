@@ -9,10 +9,10 @@ RSpec.describe 'images' do
     expect(results).to have_key(:results)
     results[:results].map do |result| 
       expect(result).to be_a Hash
-      expect(result).to have_key(:description)
-      expect(result[:description]).to be_a String
       expect(result).to have_key(:alt_description)
-      expect(result[:alt_description]).to be_a String
+      expect(result).to have_key(:urls)
+      expect(result[:urls]).to be_a Hash
+      expect(result[:urls]).to have_key(:raw)
     end
   end
 end

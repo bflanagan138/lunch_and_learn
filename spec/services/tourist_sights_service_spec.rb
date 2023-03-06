@@ -7,7 +7,10 @@ RSpec.describe 'tourist sights' do
     coordinates = capital_coords[0][:capitalInfo][:latlng]
     lat = coordinates[0]
     long = coordinates[1]
-    require 'pry'; binding.pry
+   
+    results = TouristSightsService.tourist_sights(lat, long)
+    
+
     # expect(results).to have_key(:hits)
     # expect(results[:hits]).to be_a Array
     # expect(results[:hits][0]).to be_a Hash

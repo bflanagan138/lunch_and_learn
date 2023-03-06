@@ -1,11 +1,11 @@
 class TouristSightsService
   # def self.conn
-  #   Faraday.new(url: "https://api.geoapify.com", params: { apiKey:ENV['places_api_key'], categories:"tourism.sights", filter:"circle:#{lat},#{long},20000", limit:20 } )
+  #   Faraday.new(url: "https://api.geoapify.com", params: { apiKey: ENV['places_api_key'], categories: "tourism.sights", filter: "circle:#{long},#{lat},1000", limit: 20 } )
   # end
 
   def self.tourist_sights(lat, long)
-    response = Faraday.new(url: "https://api.geoapify.com/api/v1/places?", params: { apiKey:ENV['places_api_key'], categories:"tourism.sights", filter:"circle:#{lat},#{long},20000", limit:"20" } )
-    require 'pry'; binding.pry
+    # response = conn.get("/v2/places?lat=#{lat}long=#{long}")
+    response = Faraday.get("https://api.geoapify.com/v2/places?categories=tourism.sights&filter=circle:2.33,48.87,1000&limit=20&apiKey=07e6673b28764534a2dd732c5a1121fe")
     tourism_sights = parse(response)
   end
 

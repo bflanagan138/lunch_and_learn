@@ -9,22 +9,18 @@ RSpec.describe 'tourist sights' do
     long = coordinates[1]
    
     results = TouristSightsService.tourist_sights(lat, long)
-    
 
-    # expect(results).to have_key(:hits)
-    # expect(results[:hits]).to be_a Array
-    # expect(results[:hits][0]).to be_a Hash
-    # expect(results[:hits][0]).to have_key(:recipe)
-    # expect(results[:hits][0][:recipe]).to be_a Hash
-    # expect(results[:hits][0][:recipe]).to have_key(:url)
-    # expect(results[:hits][0][:recipe][:url]).to be_a String
-    # expect(results[:hits][0][:recipe]).to have_key(:label)
-    # expect(results[:hits][0][:recipe][:label]).to be_a String
-    # expect(results[:hits][0][:recipe]).to have_key(:image)
-    # expect(results[:hits][0][:recipe][:image]).to be_a String
-    # expect(results[:hits][0][:recipe]).to have_key(:images)
-    # expect(results[:hits][0][:recipe][:images]).to be_a Hash
-    # expect(results[:hits][0][:recipe][:images]).to have_key(:THUMBNAIL)
-    # expect(results[:hits][0][:recipe][:images][:THUMBNAIL]).to be_a Hash
+    expect(results).to have_key(:features)
+    expect(results[:features]).to be_a Array
+    expect(results[:features][0]).to be_a Hash
+    expect(results[:features][0]).to have_key(:properties)
+    expect(results[:features][0][:properties]).to be_a Hash
+    expect(results[:features][0][:properties]).to have_key(:name)
+    expect(results[:features][0][:properties][:name]).to be_a String
+    expect(results[:features][0][:properties]).to have_key(:formatted)
+    expect(results[:features][0][:properties][:formatted]).to be_a String
+    expect(results[:features][0][:properties]).to have_key(:place_id)
+    expect(results[:features][0][:properties][:place_id]).to be_a String
+   
   end
 end

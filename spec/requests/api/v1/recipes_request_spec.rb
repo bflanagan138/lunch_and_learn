@@ -1,15 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe "recipe API request" do
+ 
   it 'returns a list of recipes from provided country' do
     # recipe_response = File.read('spec/fixtures/country_recipes.json')
     # country_response = File.read('spec/fixtures/country.json')
     # country = 'Vatican'
     
     # stub_request(:get, "https://api.edamam.com/api/recipes/v2?q=#{country}&app_id=#{ENV['edamam_app_id']}&app_key=#{ENV['edamam_app_key']}&type=#{ENV['edamam_type']}")
-    # .to_return(status: 200, body: recipe_response)
+    #   .to_return(status: 200, body: recipe_response)
     # stub_request(:get, "https://restcountries.com/v3.1/name/#{country}")
-    # .to_return(status: 200, body: country_response)
+    #   .to_return(status: 200, body: country_response)
+ 
     country = "Vatican"
     get "/api/v1/recipes?country=#{country}"
     
@@ -43,7 +45,7 @@ RSpec.describe "recipe API request" do
   end
 
   it 'returns an empty array if no country name is provided' do
-    country = ''
+    
     get "/api/v1/recipes/?country=#{country}"
     parse = JSON.parse(response.body, symbolize_names: true)
   

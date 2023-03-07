@@ -6,7 +6,7 @@ RSpec.describe "user" do
     user = { "name": "Athena Dao", "email": "athenadao@bestgirlever.com" }
     headers = { "Content-Type": "application/json", "Accept": "application/json" }
     
-    post "/api/v1/users", headers: headers, params: SecureRandom.hex(16) 
+    post "/api/v1/users", headers: headers
 
     expect(response).to be_successful
     expect(response.status).to be 201

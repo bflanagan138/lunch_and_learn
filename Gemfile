@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'faraday'
 gem 'figaro'
 gem 'jsonapi-serializer'
+gem 'securerandom'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

@@ -18,10 +18,10 @@ class CountriesService
     end
   end
 
-  def self.learning_resources(country)
-    response = conn.get("/v3.1/name/#{country}")
-    country = parse(response)
-  end
+  # def self.learning_resources(country)
+  #   response = conn.get("/v3.1/name/#{country}")
+  #   country = parse(response)
+  # end
 
   def self.parse(response)
     JSON.parse(response.body, symbolize_names: true)

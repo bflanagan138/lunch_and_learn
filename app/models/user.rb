@@ -1,10 +1,10 @@
+require 'securerandom'
+
 class User < ApplicationRecord
-  before_create :create_api_key
+  before_validation :create_api_key, on: :create
 
-  validates_presence_of :name, :email, :api_key
-
+  validates_presence_of :name, :email
   validates :email, uniqueness: true
-  validates :api_key, uniqueness: true
 
   private
   def create_api_key

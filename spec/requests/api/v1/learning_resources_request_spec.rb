@@ -16,7 +16,7 @@ RSpec.describe "learning resources request" do
     get "/api/v1/learning_resources?country=#{country}"
     expect(response).to be_successful
     expect(response.status).to be 200
-    require 'pry'; binding.pry
+    
     parse = JSON.parse(response.body, symbolize_names: true)
    
     expect(parse).to be_a Hash

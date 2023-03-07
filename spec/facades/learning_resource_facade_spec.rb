@@ -4,12 +4,12 @@ RSpec.describe 'recipes' do
   it 'returns JSON response' do
     country = 'Estonia'
     country_response = File.read('spec/fixtures/denmark.json')
-    recipe_response = File.read('spec/fixtures/country_recipes.json')
- 
+    recipes_response = File.read('spec/fixtures/country_recipes.json')
+    stub_request(:get, "https://api.edamam.com/api/recipes/v2?q=#{country}&app_id=#{ENV['edamam_app_id']}&app_key=#{ENV['edamam_app_key']}&type=#{ENV['edamam_type']}")
+      .to_return(status: 200, body: recipes_response)
     stub_request(:get, "https://restcountries.com/v3.1/name/#{country}")
       .to_return(status: 200, body: country_response)
-    stub_request(:get, "https://api.edamam.com/api/recipes/v2?q=#{country}&app_id=#{ENV['edamam_app_id']}&app_key=#{ENV['edamam_app_key']}&type=#{ENV['edamam_type']}")
-        .to_return(status: 200, body: recipe_response)
+   
 
     recipes = RecipeFacade.recipes_by_country(country)
     

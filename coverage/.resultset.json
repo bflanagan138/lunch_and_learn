@@ -11,8 +11,12 @@
         "lines": [
           1,
           1,
+          3,
+          3,
           1,
-          11,
+          null,
+          22,
+          null,
           null,
           null
         ]
@@ -21,16 +25,16 @@
         "lines": [
           1,
           1,
-          2,
+          4,
           null,
           null,
           1,
-          2,
-          2,
+          4,
+          4,
           null,
           null,
           1,
-          2,
+          4,
           null,
           null
         ]
@@ -42,8 +46,8 @@
           null,
           null,
           1,
-          10,
-          10,
+          20,
+          20,
           null,
           null
         ]
@@ -52,8 +56,8 @@
         "lines": [
           1,
           1,
-          2,
-          25,
+          4,
+          16,
           null,
           null
         ]
@@ -62,16 +66,16 @@
         "lines": [
           1,
           1,
-          3,
+          5,
           null,
           null,
           1,
-          3,
-          3,
+          5,
+          5,
           null,
           null,
           1,
-          3,
+          5,
           null,
           null
         ]
@@ -85,10 +89,10 @@
           null,
           null,
           1,
-          23,
-          23,
-          23,
-          23,
+          12,
+          12,
+          12,
+          12,
           null,
           null
         ]
@@ -97,9 +101,13 @@
         "lines": [
           1,
           1,
-          2,
-          7,
+          3,
+          3,
           1,
+          null,
+          12,
+          2,
+          null,
           null,
           null
         ]
@@ -108,16 +116,16 @@
         "lines": [
           1,
           1,
-          3,
+          4,
           null,
           null,
           1,
-          3,
-          3,
+          4,
+          4,
           null,
           null,
           1,
-          3,
+          4,
           null,
           null
         ]
@@ -129,8 +137,8 @@
           null,
           null,
           1,
-          5,
-          5,
+          10,
+          10,
           null,
           null
         ]
@@ -140,7 +148,7 @@
           1,
           1,
           1,
-          0,
+          1,
           null,
           null
         ]
@@ -156,8 +164,33 @@
           1,
           1,
           1,
-          0,
-          0,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/poros/learning_resource.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/serializers/learning_resource_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          1,
           null,
           null,
           null
@@ -167,14 +200,14 @@
         "lines": [
           1,
           1,
-          3,
-          3,
-          1,
+          4,
+          4,
+          0,
+          4,
           2,
-          1,
           null,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           null
@@ -184,32 +217,31 @@
         "lines": [
           1,
           1,
-          11,
+          12,
           null,
           null,
           1,
-          3,
-          3,
-          3,
-          null,
-          null,
-          1,
-          4,
-          4,
           2,
-          null,
           2,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
+          2,
           null,
           null,
           1,
           5,
+          5,
+          5,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          7,
           null,
           null
         ]
@@ -218,7 +250,7 @@
         "lines": [
           1,
           1,
-          4,
+          7,
           1,
           null,
           null,
@@ -231,7 +263,7 @@
           1,
           1,
           null,
-          1,
+          2,
           null,
           null,
           null
@@ -267,38 +299,8 @@
         "branches": {
         }
       },
-      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/serializers/learning_resources_serializer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/serializers/images_serializer.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/poros/learning_resource.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
           0,
           0,
           0,
@@ -337,6 +339,6 @@
         }
       }
     },
-    "timestamp": 1678068469
+    "timestamp": 1678157090
   }
 }

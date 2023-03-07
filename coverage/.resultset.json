@@ -7,6 +7,30 @@
           null
         ]
       },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          7,
+          null,
+          null
+        ]
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/facades/image_facade.rb": {
         "lines": [
           1,
@@ -269,18 +293,35 @@
           null
         ]
       },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/mailers/application_mailer.rb": {
         "lines": [
           0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/bryanflanagan/turing_work/3mod/projects/lunch_and_learn/app/models/application_record.rb": {
-        "lines": [
           0,
           0,
           0
@@ -339,6 +380,6 @@
         }
       }
     },
-    "timestamp": 1678157090
+    "timestamp": 1678222002
   }
 }

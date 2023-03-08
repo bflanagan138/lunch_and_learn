@@ -6,7 +6,7 @@ RSpec.describe "user" do
     headers = { "Content-Type": "application/json", "Accept": "application/json" }
     
     post "/api/v1/users", headers: headers, params: JSON.generate(user: body)
-  
+
     expect(response).to be_successful
     expect(response.status).to be 201
 

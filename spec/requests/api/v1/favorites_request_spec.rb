@@ -78,7 +78,7 @@ RSpec.describe "favorites" do
     end
   end
 
-  xit 'returns an error if user is invalid' do #WIP
+  it 'returns an error if user is invalid' do #WIP
     user1 = User.create!({ name: "Lol Tolhurst", email: "lol@thecure.com", api_key: SecureRandom.hex(16)})
     
     recipe_1 = user1.favorites.create!("country": "Egypt", "recipe_link": "http://www.thekitchn.com/recipe-egyptian-tomato-soup", "recipe_title": "Recipe: Egyptian Tomato Soup")
@@ -87,11 +87,17 @@ RSpec.describe "favorites" do
     get "/api/v1/favorites?api_key=#{user1.api_key}"
     
     user2 = User.create!({ name: "Dave Lombardo", email: "lol@thecure.com", api_key: SecureRandom.hex(16)})
+   
     recipe_3 = user2.favorites.create!("country": "Mexico", "recipe_link": "https://www.mexicaneats.com/burritos", "recipe_title": "Best Burritos Ever")
     get "/api/v1/favorites?api_key=#{user2.api_key}"
 
-    
     expect(response).to_not be_successful
     expect(response.status).to be 401
+
+    parse = JSON.parse(response.body, symbolize_names: true)
+
+    expect(parse).to be_a Hash
+    expect(parse).to have_key (:error)
+    expect(parse[:error]).to eq ("Login Failure: Email already Exists")
   end
 end

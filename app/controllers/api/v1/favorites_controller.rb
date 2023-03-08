@@ -3,13 +3,13 @@ class Api::V1::FavoritesController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    # require 'pry'; binding.pry
-    # if @user.present?
+    existing_user = User.find_by(email: params[:email])
+    if existing_user != nil?
       authenticate_user
       render json: FavoriteSerializer.new(@user.favorites), status: 200
-    # elsif #user email already exists
-    #   render json: { "error": "Login Failure: Email already Exists" }, status: 401
-    # end
+    else
+      render json: { "error": "Login Failure: Email already Exists" }, status: 401
+    end
   end
 
   def create

@@ -61,6 +61,8 @@ To run the server on localhost:3000: ```rails s```
 ## API Information
 Multiple API Endpoints were consumed to gather data for this project. Under each are the naming conventions used in the code for any secret keys. For any listed secret keys, you will need to obtain your own personal keys and assign them exactly as shown in your [application.yml file](https://github.com/laserlemon/figaro). 
 
+[Postman API Documentation](https://documenter.getpostman.com/view/25516850/2s93JqT5VV)
+
 1. [Edamam API](https://developer.edamam.com/edamam-docs-recipe-api)
   - edamam_type: public *enter exactly as shown*
   - edamam_app_id: < your id here >

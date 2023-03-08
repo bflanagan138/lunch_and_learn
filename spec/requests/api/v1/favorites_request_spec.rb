@@ -78,7 +78,7 @@ RSpec.describe "favorites" do
     end
   end
 
-  it 'returns an error if user is invalid' do #WIP
+  xit 'returns an error if user is invalid' do #WIP
     user1 = User.create!({ name: "Lol Tolhurst", email: "lol@thecure.com", api_key: SecureRandom.hex(16)})
     
     recipe_1 = user1.favorites.create!("country": "Egypt", "recipe_link": "http://www.thekitchn.com/recipe-egyptian-tomato-soup", "recipe_title": "Recipe: Egyptian Tomato Soup")

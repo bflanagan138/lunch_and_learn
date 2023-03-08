@@ -6,6 +6,8 @@ class User < ApplicationRecord
   validates_presence_of :name, :email
   validates :email, uniqueness: true
 
+  has_many :favorites
+
   private
   def create_api_key
     self.api_key = SecureRandom.hex(16)

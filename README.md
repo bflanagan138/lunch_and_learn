@@ -74,6 +74,7 @@ Multiple API Endpoints were consumed to gather data for this project. Under each
   - unsplash_client_id: < your id here >
   - unsplash_secret_key: < your key here >
 4. [RestCountries API](https://restcountries.com/#api-endpoints-v3)
+  - no keys required
 
 ## Project Owner
 

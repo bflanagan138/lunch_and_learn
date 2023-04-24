@@ -78,7 +78,7 @@ Multiple API Endpoints were consumed to gather data for this project. Under each
 
 ## Project Owner
 
-| [<img alt="Bryan" width="75" src="https://github.com/account"/>](https://www.linkedin.com/in/bryanflanagan138/) | 
+| [<img alt="Bryan" width="75" src="https://avatars.githubusercontent.com/u/109649285?v=4"/>](https://www.linkedin.com/in/bryanflanagan138/) | 
 |----------- |
 | Bryan Flanagan |
 | [GitHub](https://github.com/bflanagan138) |

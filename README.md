@@ -78,7 +78,7 @@ Multiple API Endpoints were consumed to gather data for this project. Under each
 
 ## Project Owner
 
-| [<img alt="Bryan" width="75" src="https://media.licdn.com/dms/image/D5635AQHLsl9SWgJRJQ/profile-framedphoto-shrink_200_200/0/1677792669714?e=1678399200&v=beta&t=dcfkwSGIfADNuxlbqQVNkTGuKyMV-fNhPEKiBc3AEy0"/>](https://www.linkedin.com/in/bryanflanagan138/) | 
+| [<img alt="Bryan" width="75" src="https://github.com/account"/>](https://www.linkedin.com/in/bryanflanagan138/) | 
 |----------- |
 | Bryan Flanagan |
 | [GitHub](https://github.com/bflanagan138) |
